@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ paredit-mode
+ package-install
+ grep-find
+ package-refresh-contents
+ cd
+ 5x5
+)
+
+;; ----- smex-data -----
+(
+ (w3-fetch . 1)
+ (clojure-jack-in . 2)
+ (package-install . 6)
+ (package-list-packages . 5)
+ (package-refresh-contents . 1)
+ (grep-find . 2)
+ (paredit-mode . 2)
+)

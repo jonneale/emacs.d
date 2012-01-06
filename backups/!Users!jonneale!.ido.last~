@@ -1,0 +1,221 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/jonneale/Work/energy-supplier-data/test/supplier_data/test/" . "scottish_power/")
+ ("/Users/jonneale/Work/energy-supplier-data/src/supplier_data/" . "scottish_power/")
+ ("/Users/jonneale/Work/energy-supplier-data/src/" . "supplier_data/")
+ ("/Users/jonneale/Work/energy-supplier-data/test/supplier_data/" . "test/")
+ ("/Users/jonneale/Work/energy-supplier-data/test/" . "supplier_data/")
+ ("/Users/jonneale/Work/energy-supplier-data/" . "src/")
+ ("/Users/jonneale/Scratch/codetest/" . "test/")
+ ("/Users/jonneale/Scratch/code-test/test/code_test/" . "test/")
+ ("/Users/jonneale/Scratch/code-test/test/" . "code_test/")
+ ("/Users/jonneale/Work/energy-comparison/test/comparison/test/" . "calculation/")
+ ("/Users/jonneale/Work/energy-comparison/src/comparison/" . "web/")
+ ("/" . "Users/")
+ ("/Users/" . "jonneale/")
+ ("/Users/jonneale/Work/" . "energy-supplier-data/")
+ ("/Users/jonneale/Work/energy-comparison/test/comparison/" . "test/")
+ ("/Users/jonneale/Work/energy-comparison/test/" . "comparison/")
+ ("/Users/jonneale/Work/energy-comparison/src/" . "comparison/")
+ ("/Users/jonneale/Work/energy-comparison/" . "src/")
+ ("/Users/jonneale/Scratch/code-test/" . "test/")
+ ("/Users/jonneale/Scratch/dojo/src/" . "dojo/")
+ ("/Users/jonneale/Scratch/dojo/" . "src/")
+ ("/Users/jonneale/Scratch/clork/" . "src/")
+ ("/Users/jonneale/Scratch/sicp-examples/" . "week6/")
+ ("/Users/jonneale/" . "Work/")
+ ("/Users/jonneale/Scratch/" . "aiclass/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/jonneale/Work/energy-supplier-data/src/supplier_data/scottish_power/"
+ "/Users/jonneale/Work/energy-supplier-data/src/supplier_data/"
+ "/Users/jonneale/Work/energy-supplier-data/test/supplier_data/test/scottish_power/"
+ "/Users/jonneale/Work/energy-supplier-data/test/supplier_data/test/"
+ "/Users/jonneale/Work/energy-supplier-data/bin/"
+ "/Users/jonneale/Work/energy-supplier-data/"
+ "/Users/jonneale/Work/energy-supplier-data/resources/"
+ "/Users/jonneale/Work/energy-comparison/src/comparison/web/"
+ "/Users/jonneale/Work/energy-comparison/src/comparison/domain/"
+ "/Users/jonneale/Work/energy-comparison/test/comparison/test/calculation/"
+ "/Users/jonneale/Scratch/aiclass/"
+ "/Users/jonneale/Work/energy-comparison/src/comparison/calculation/"
+ "/Users/jonneale/Scratch/Euler/"
+ "/Users/jonneale/Work/energy-bank-validation/"
+ "/Users/jonneale/Scratch/connect-4/"
+ "/Users/jonneale/Scratch/clojure-demos/"
+ "/Users/jonneale/Scratch/"
+ "/Users/jonneale/Work/energy-comparison/src/comparison/backcalculation/"
+ "/Users/jonneale/Work/energy-comparison/test/comparison/test/backcalculation/"
+ "/Users/jonneale/Scratch/codetest/test/"
+ "/Users/jonneale/Scratch/codetest/"
+ "/Users/jonneale/Scratch/code-test/src/"
+ "/Users/jonneale/Scratch/codetest/src/"
+ "/Users/jonneale/Scratch/code-test/test/code_test/test/"
+ "/Users/jonneale/Scratch/code-test/test/"
+ "/Users/jonneale/Work/energy-comparison/src/comparison/"
+ "/Users/jonneale/Work/energy-comparison/"
+ "/Users/jonneale/"
+ "/Users/jonneale/Scratch/sicp-examples/week6/"
+ "/Users/jonneale/Scratch/sicp-examples/week8/"
+ "/Users/jonneale/Work/energy-comparison/test/comparison/test/"
+ "/Users/jonneale/Work/"
+ "/Users/jonneale/Scratch/sicp-examples/week7/"
+ "/Users/jonneale/Work/energy-comparison/test/resources/"
+ "/Users/jonneale/Scratch/dojo/src/dojo/"
+ "/Users/jonneale/Scratch/clork/src/"
+ "/Users/jonneale/Scratch/clork/"
+ "/Users/jonneale/Scratch/sicp-examples/week4/"
+ "/Users/jonneale/Scratch/sicp-examples/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "batchfile.clj"
+ "translation.clj"
+ "batch_file_generator.clj"
+ "api.clj"
+ "repository.clj"
+ "core.clj"
+ "validation.clj"
+ "switch_instruction.clj"
+ "post-switch.sh"
+ "splitting.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/jonneale/Work/energy-supplier-data/src/supplier_data/scottish_power/" (20230 56792) "validation.clj" "translation.clj" "splitting.clj" "mappings.clj" "filenames.clj" "batchfile.clj" ".#translation.clj" "#translation.clj#" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/src/supplier_data/" (20230 49383) "switch_watcher.clj" "switch_instruction.clj" "scottish_power/" "repository.clj" "edf/" "crypto.clj" "core.clj" "config.clj" "batch_file_generator.clj" "api.clj" "#repository.clj#" "#core.clj#" "../" "./")
+
+ ("/Users/jonneale/" (20230 49383) "Work/" "width" "Vrui-2.0/" "VMs/" "vegas.xcf" "vegas.jpg" "uninstall-mono.sh" "Tools/" "tiff-3.9.4.tar.gz" "test1" "test" "Terminal Saved Output.txt" "Sites/" "share/" "Send Registration" "Scratch/" "scoped work.txt" "rmagick.sh" "restore/" "Public/" "Pictures/" "out.dump" "octave-core" "Note.txt" "nginx.conf" "Music/" "Movies/" "Misc/" "mikes-emacs-d/" "libwmf-0.2.8.4.tar.gz" "Library/" "libpng-1.2.39.tar.gz" "libmp3lame.dylib" "leiningen/" "lcms-1.19.tar.gz" "july2011.txt" "jpegsrc.v7.tar.gz" "JHelioviewer/" "hdfs.log" "git-completion" "ghostscript-8.70.tar.gz" "freetype-2.3.9.tar.gz" "freetype-2.3.9/" "freb.xsl" "fr027524.xml" "fr027486.xml" "error.log" "e" "dwhelper/" "dump/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "cljr/" "Cards.xsd" "Calibre Library/" "bin/" "bash_aliases" "backup.tgz" "b.rb" "asimo.m4v" "access.log" "a.rb" ".Xcode/" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".wapi/" ".vimrc" ".viminfo" ".vim-fuf" ".vim/" ".Trash/" ".subversion/" ".ssh/" ".squirrel-sql/" ".slime-history.eld" ".shoes/" ".sabnzbd/" ".rvmrc" ".rvm/" ".rstudio-desktop/" ".Rhistory" ".resty/" ".recently-used" ".recentf" ".profile.macports-saved_2010-12-28_at_15:16:06" ".profile" ".pow/" ".odbc.ini" ".octave_hist" ".npm/" ".node_libraries/" ".mysql_history" ".mplayer/" ".mcf/" ".m2/" ".local/" ".lesshst" ".lein/" ".jline-clojure.main.history" ".irbrc" ".irb_history" ".irb-history" ".ido.last" ".htoprc" ".heroku/" ".gvimrc" ".gitk" ".gitconfig" ".git-completion" ".gemrc" ".geminstaller.yml" ".gem/" ".gdb_history" ".freetds.conf" ".fonts/" ".fontconfig/" ".eshell/" ".emacs.d.working.bak/" ".emacs.d.bak/" ".emacs.d/" ".emacs-places" ".ec2/" ".DS_Store" ".dropbox/" ".DownloadManager/" ".dbshell" ".cups/" ".config/" ".CFUserTextEncoding" ".CF89AA64" ".cache/" ".cabal/" ".bzr.log" ".bash_rc" ".bash_profile.macports-saved_2011-08-02_at_14:34:22" ".bash_profile" ".bash_history" ".bash_aliases" ".bak.emacs.d/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/test/supplier_data/test/" (20229 55609) "switch_instruction.clj" "scottish_power/" "crypto.clj" "core.clj" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/test/supplier_data/test/scottish_power/" (20229 55422) "validation.clj" "translation.clj" "splitting.clj" "filenames.clj" "batchfile.clj" "../" "./")
+
+ ("/Users/jonneale/.emacs.d/" (20229 47318) "vendor/" "url/" "tar.sh" "swank/" "starter-kit.el" "starter-kit-pkg.el" "starter-kit-misc.el" "starter-kit-defuns.el" "README.markdown" "places" "paul.el" "modules/" "init.el" "elpa/" "COPYING" "backups/" "auto-save-list/" ".smex-items" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jonneale/.emacs.d/elpa/" (20229 54089) "vline-1.10/" "starter-kit-ruby-2.0.1/" "starter-kit-lisp-2.0.3/" "starter-kit-js-2.0.1/" "starter-kit-bindings-2.0.2/" "starter-kit-2.0.3/" "smex-1.1.2/" "slime-20100404.1/" "paredit-22/" "magit-1.0.0/" "inf-ruby-2.2.3/" "ido-ubiquitous-0.8/" "idle-highlight-mode-1.1.2/" "find-file-in-project-3.0/" "elisp-slime-nav-0.2/" "color-theme-sanityinc-solarized-2.4/" "color-theme-blackboard-0.0.2/" "color-theme-6.6.1/" "col-highlight-22.0/" "clojure-test-mode-1.6.0/" "clojure-mode-1.11.5/" "archives/" "../" "./")
+
+ ("/Users/jonneale/.emacs.d/elpa/starter-kit-2.0.3/" (20229 33728) "starter-kit.elc" "starter-kit.el" "starter-kit-pkg.elc" "starter-kit-pkg.el" "starter-kit-misc.elc" "starter-kit-misc.el" "starter-kit-defuns.elc" "starter-kit-defuns.el" "starter-kit-autoloads.el~" "starter-kit-autoloads.el" "../" "./")
+
+ ("/Users/jonneale/Work/" (20229 45344) "uswitch-weblog-explorer/" "uswitch-tracking/" "uswitch-siteroot/" "uswitch-savings-feed/" "uswitch-reverse-proxy/" "uswitch-partners/" "uswitch-news-feed/" "uswitch-life-insurance/" "uswitch-insulation/" "uswitch-deploymenttool/" "uswitch-deploy-keys/" "uswitch-cms/" "uswitch-batchfiles/" "uswitch-application-signaller-ruby/" "uswitch/" "update_energy" "ubot-scripts/" "Trunk/" "tariff-editr/" "src/" "SiteRoot/" "Shared/" "Release/" "rbhive/" "petworlddirect/" "petvillas/" "outlet/" "nginx.conf" "new/" "nethttp.rb" "mongo-upgrade/" "main-process-clean/" "machine-learning/" "m-learning-2/" "libfreenect/" "lein" "justvivariums/" "justfishtanks/" "justchickencoops/" "justcages/" "hiveimporter/" "hadoop_cluster.xml" "forward-technology/" "forward-puppet/" "forward-massage/" "forward/" "facebox.css" "energy_engine_master/" "energy_engine/" "energy-ushop/" "energy-trogdor-web/" "energy-tracking/" "energy-thanks-you/" "energy-tariff-editor/" "energy-switching/" "energy-switch-management/" "energy-supplier-data/" "energy-status/" "energy-stats/" "energy-savings/" "energy-reporting/" "energy-old-main-process/" "energy-offiline-partners/" "energy-mpan-lookup/" "energy-main-process/" "energy-layout/" "energy-home-movers/" "energy-fulfilment/" "energy-fixed-plans/" "energy-discounts.clj" "energy-discounts-wip/" "energy-comparison-client/" "energy-comparison/" "energy-charon-resque/" "energy-charon/" "energy-callback/" "energy-bank-validation/" "energy-automation/" "energy-annual-statements/" "ecommerce-dashboard/" "e7_plans.rb" "e" "dump/" "deployment/" "credit_cards_engine/" "credit-cards-spike/" "credit-cards-b/" "credit-cards/" "comparison2.clj" "closure-library-read-only/" "check-energy" "cart-pole-demo/" "batch-file-checker/" ".DS_Store" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/bin/" (20229 32320) "test.sh" "switch-watcher.sh" "switch-transform.sh" "switch-collector.sh" "stop.sh" "run.sh" "post-switch.sh" "clean-dirs.sh" "batch-file-generator.sh" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/resources/" (20229 47096) "switches-ready-for-processing/" "switches-being-processed/" "split.rb" "scottishpower.json" "nov-scottishpower.json" "new-batch-switch-example.json" "example.json" "eg.json" "config/" "batched-files/" "batch-files/" "all-scottishpower.json" ".#new-batch-switch-example.json" "#new-batch-switch-example.json#" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/" (20229 46019) "todo.txt" "tmp/" "test/" "src/" "scratch.txt" "resources/" "README" "Rakefile" "project.clj" "lib/" "Gemfile.lock" "Gemfile" "docs/" "config/" "classes/" "Capfile" "bin/" ".rvmrc" ".rbenv-version" ".lein-failures" ".lein-deps-sum" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/src/comparison/web/" (20226 53926) "run.clj" "resources.clj" "middleware.clj" "gzip.clj" "api.clj" "#api.clj#" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/" (20226 53926) "test/" "src/" "script/" "run.sh" "resources/" "README.markdown" "project.clj" "profile.sh" "pricing_run_with_profiler.sh" "pricing_run.sh" "lib/" "Gemfile.lock" "Gemfile" "extra/" "energy-comparison-20110726150756.war" "energy-comparison-20110726150738.war" "energy-comparison-20110726150712.war" "energy-comparison-20110706120732.war" "energy-comparison-20110706120716.war" "energy-comparison-20110630110659.war" "energy-comparison-20110630110658.war" "energy-comparison-20110617170615.war" "energy-comparison-20110617170605.war" "energy-comparison-20110520170558.war" "energy-comparison-20110520170529.war" "energy-comparison-20110520170521.war" "energy-comparison-20110520170519.war" "energy-comparison-20110427170449.war" "energy-comparison-20110427170420.war" "energy-comparison-1.0.0-standalone.war" "config/" "classes/" "Capfile" ".rvmrc" ".lein-failures" ".lein-deps-sum" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/jonneale/Scratch/" (20200 30756) "zeromq2-1/" "work.txt" "untitled 4.txt" "ubot-scripts/" "trinidad_daemon/" "tipsy/" "tips.csv" "test/" "strace.txt" "src/" "sql/" "spot-the-difference/" "sinatrify/" "sinatra_app/" "sicp-kindle/" "sicp-examples/" "server setup.txt" "scotland key.txt" "savings_callbacks.csv" "ruby_koans/" "ruby-firmata/" "Robbie/" "rmagick" "README" "r-talk-title-generator/" "R notes.txt" "petvillas_production_2010-12-02.sql" "page.html" "nzb/" "node/" "my-comparison.clj" "my-arduino/" "mlclass-videos/" "ml-class/" "mikes-dot-files/" "migration" "matt/" "laura-sez/" "kinect/" "justvivariums_production_2010-12-02.sql" "justvivariums_production_2010-11-30.sql" "justvivariums_production_2010-11-17.sql" "justchickencoops_production_2010-11-17.sql" "JoyOfClojure/" "iOS/" "infer/" "inception/" "import products.txt" "import products.rb" "hubot-scripts/" "hoptoad-widget/" "hive.rb" "historicalise-credit-cards.sql" "hackernews/" "github-test/" "game-of-life/" "fwdsquare/" "facebox/" "euler2/" "Euler/" "energy_import_2011-06-15.sql" "energy_import_2011-03-17.sql" "energy_import_2011-03-07.sql" "energy_import_2011-02-08.sql" "energy_import_2011-02-04.sql" "energy-comparison.clj" "emacs-starter-kit/" "elly/" "dump-1306292402.tar.bz2" "dump/" "dotfiles/" "dojo/" "depot_staging_2010-11-17.sql" "depot_production_20101027160028.sql" "depot_production_2010-11-30.sql" "depot_production_2010-11-21.sql" "debug-repl/" "croak-app/" "credit-cards_production_2011-03-10.sql" "credit-cards_production_2011-01-25.sql" "credit-cards_production_2011-01-19.sql" "credit-cards_production_2011-01-06.sql" "credit-cards_production_2010-12-14.sql" "credit-cards_production" "credit-cards_development_2010-12-08.sql" "credit-cards_development" "credit-cards-referrals/" "cred_cards_production_new_2011-03-23.sql" "coolometer/" "connect-4/" "codetest/" "clork/" "clojure-warrior/" "clojure-demos/" "clicks_credit-cards_production_2011-01-25.sql" "canvas-game/" "buzzword-bingo/" "blog/" "birthday/" "b.rb" "attempt2.clj" "arduino-twitter/" "arduino/" "aiclass-videos/" "aiclass/" "a.rb" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/src/comparison/calculation/" (20162 18854) "limits.clj" "fulfilment.clj" "discounts.clj" "bills.clj" "#fulfilment.clj#" "#bills.clj#" "../" "./")
+
+ ("/Users/jonneale/Scratch/aiclass/" (20199 24345) "script.sh" "sample.txt" "german.txt" "english.txt" "bayes.clj" "azerbaijan.txt" "#bayes.clj#" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/src/comparison/domain/" (20180 59347) "suppliers.clj" "plans.clj" "../" "./")
+
+ ("/Users/jonneale/.emacs.d/elpa/gist-0.5/" (20200 30911) "gist.elc" "gist.el" "gist-pkg.elc" "gist-pkg.el" "gist-autoloads.el~" "gist-autoloads.el" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/src/" (20166 6798) "supplier_data/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/test/supplier_data/" (20166 6798) "test/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-supplier-data/test/" (20166 6798) "supplier_data/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/test/comparison/test/calculation/" (20126 59198) "limits.clj" "fulfilment.clj" "discounts.clj" "bills.clj" "../" "./")
+
+ ("/Users/" (20007 60719) "Shared/" "jonneale/" ".localized" "../" "./")
+
+ ("/Users/jonneale/Scratch/aiclass-videos/" (20151 3910) "Unit_9_36_Planning_Under_Uncertainty_Conclusion-PuoTbYxNJnU.mp4" "Unit_9_35_POMDP-bVT7QlYC7JQ.mp4" "Unit_9_34_POMDP_vs_MDP-ynGnvuh0ELQ.mp4" "Unit_9_33_Partial_Observability_Introduction-y3Rkp3oCzq4.mp4" "Unit_9_32_MDP_Conclusion-fCwZN0Ht4Q8.mp4" "Unit_9_31_Value_Iterations_and_Policy_2-46U-_qzQui0.mp4" "Unit_9_30_Value_Iterations_and_Policy_1-CDXaY7cdTYE.mp4" "Unit_9_29_Stochastic_Answer_2-0ImGXKeKqFU.mp4" "Unit_9_28_Stochastic_Question_2-YIR22PaBvCY.mp4" "Unit_9_27_Stochastic_Answer_1-wWQO0h_WjT4.mp4" "Unit_9_26_Stochastic_Question_1-_LQAOyxbGiQ.mp4" "Unit_9_25_Deterministic_Answer_3-RzO7U1ZPD54.mp4" "Unit_9_24_Deterministic_Question_3-M3AM5huQzlc.mp4" "Unit_9_23_Deterministic_Answer_2-Mr3H7QpecRA.mp4" "Unit_9_22_Deterministic_Question_2-ytCyzDAz2Uo.mp4" "Unit_9_21_Deterministic_Answer_1-cs7eAdklm_4.mp4" "Unit_9_20_Deterministic_Question_1-0uBKtlb8QtU.mp4" "Unit_9_19_Value_Iteration_3-glHKJ359Cnc.mp4" "Unit_9_18_Value_Iteration_2-8-pzJXUiXrM.mp4" "Unit_9_17_Value_Iteration_1-oefOCk3koZo.mp4" "Unit_9_16_MDP_and_Costs-WyLEhX3oUZU.mp4" "Unit_9_15_Policy_Answer_4-PJKRCDi_fIs.mp4" "Unit_9_14_Policy_Answer_3_Question_4-AAg6KkvTijU.mp4" "Unit_9_13_Policy_Question_3-Hdm9jCJvesM.mp4" "Unit_9_12_Policy_Answer_2-EbWXMMcl1dc.mp4" "Unit_9_11_Policy_Question_2-jutx0ekYv28.mp4" "Unit_9_10_Policy_Answer_1-_2thYamxwN4.mp4" "Unit_9_09_Policy_Question_1-zOzKPHA-lDQ.mp4" "Unit_9_08_Problems_with_Conventional_Planning_2-V2AvmoBJdU4.mp4" "Unit_9_07_Branching_Factor_Answer-_tpD8n3vpXg.mp4" "Unit_9_06_Branching_Factor_Question-Y_WmE98BN7c.mp4" "Unit_9_05_Problems_with_Conventional_Planning_1-Ig0ekhtAfkY.mp4" "Unit_9_04_MDP_Grid_World-YfSBYf9h7qk.mp4" "Unit_9_03_Robot_Tour_Guide_Examples-9QMZQkKuYjo.mp4" "Unit_9_02_Planning_Under_Uncertainty_MDP-9D35JSWSJAg.mp4" "Unit_9_01_Introduction-DgH6NaJHfVQ.mp4" "Unit_8_9_Stochastic_Environment_Answer-uBBfv13Ky4I.mp4" "Unit_8_8_Stocastic_Environment_Problem-Rgn1RW0fcec.mp4" "Unit_8_7_Partially_Observable_Vacuum_Cleaner_Example--6GtASYhMvo.mp4" "Unit_8_6_Sensorless_Vacuum_Cleaner_Answer-Bxd-j9s82Z8.mp4" "Unit_8_5_Sensorless_Vacumm_Cleaner_Problem-hyjwEymVfL4.mp4" "Unit_8_4_Vacuum_Cleaner_Example-lb1bEUa9WXg.mp4" "Unit_8_3_Planning_vs_Execution-BmqedPZZA4A.mp4" "Unit_8_2_Problem_Solving_vs_Planning-gZza8lZr1Oc.mp4" "Unit_8_25_Situation_Calculus_3-5M4q-H1t3Hs.mp4" "Unit_8_24_Situation_Calculus_2-GM1sxQQ81lg.mp4" "Unit_8_23_Situation_Calculus_1-Or8cA5xHFbM.mp4" "Unit_8_22_Sliding_Puzzle_Example-mZddP9ytnS4.mp4" "Unit_8_21_Plan_Space_Search-shcybJnXQz0.mp4" "Unit_8_20_Regression_vs_Progression-qUx66S-B528.mp4" "Unit_8_1_Introduction-dqeEg5V_IPM.mp4" "Unit_8_19_Regression_Search-Wu3kegFFjgI.mp4" "Unit_8_18_Progression_Search-V6eHKcZkDtg.mp4" "Unit_8_17_Classical_Planning_2-HAtsUpBlnf8.mp4" "Unit_8_16_Classical_Planning_1--o9E15BAL3o.mp4" "Unit_8_15_Tracking_the_Predict_Update_Cycle-cfYnEgrVemA.mp4" "Unit_8_14_Problem_Solving_via_Mathematical_Notation-SzeJX57N-_I.mp4" "Unit_8_13_Finding_a_Successful_Plan_Answer-Q4g4E824PRE.mp4" "Unit_8_12_Finding_a_Successful_Plan_Question-vjOY2OEu_ng.mp4" "Unit_8_11_Finding_a_Successful_Plan-ffGFIoOhN3U.mp4" "Unit_8_10_Infinite_Sequences-h3_8OLOhtG4.mp4" "Unit_7_3g_Answer-PY9d8qJ4BSY.mp4" "Unit_7_3f_Question-upyRNIh1LyE.mp4" "Unit_7_3e_Answer-vlbyPKhayiE.mp4" "Unit_7_3d_Question-JcQrAin3_V8.mp4" "Unit_7_3c_Vacuum_World-nkRYz5Omcr0.mp4" "Unit_7_3b_Syntax-Th_wM93aF94.mp4" "Unit_7_3a_Models-TZ8iD-Rofk8.mp4" "Unit_7_3_First_Order_Logic-hFzVZzMPy8Q.mp4" "Unit_7_2i_Propositional_Logic_Limitations-WQ7-B4H6-aE.mp4" "Unit_7_2h_Answer-WOYA5kQ_6gI.mp4" "Unit_7_2g_Terminology-nGZ2-EZnSh4.mp4" "Unit_7_2f_Answer-pxGxSt58kg0.mp4" "Unit_7_2e_Question-DDKhgqEWBps.mp4" "Unit_7_2d_Answer-vGfOrh8ERXo.mp4" "Unit_7_2c_Question-ae_9TnTNPU0.mp4" "Unit_7_2b_Answer-4HWzU7RhfZE.mp4" "Unit_7_2a_Truth_Tables-eOp4UJl0ZIA.mp4" "Unit_7_2_Propositional_Logic-_VjyktjNMoM.mp4" "Unit_7_1_Introduction-pszEzBql4bw.mp4" "Unit_6_8_Supervised_vs_Unsupervised_Learning-qkcFRr7LqAw.mp4" "Unit_6_7e_Answer-924fCzIWetY.mp4" "Unit_6_7d_Question-1FZjz9O65ZU.mp4" "Unit_6_7c_Answer-VG8F24TAwzg.mp4" "Unit_6_7b_Spectral_Clustering_Algorithm-P-LEH-AFovE.mp4" "Unit_6_7a_Answer-fuMoXRHxjTg.mp4" "Unit_6_7_Spectral_Clustering-VxAMBkDUfeg.mp4" "Unit_6_6g_Piece_Wise_Linear_Projection-bIZrRYKN_RY.mp4" "Unit_6_6f_Scan_Example-XNCHCncvDto.mp4" "Unit_6_6e_Face_Example-KuSZmepQA_s.mp4" "Unit_6_6d_Linear_Dimensionality_Reduction-5m6TeKw_e1M.mp4" "Unit_6_6c_Answer-wVkPH0eC4z0.mp4" "Unit_6_6b_Question-0I4p7lyKo4k.mp4" "Unit_6_6a_Answer-AaSibhWmkQM.mp4" "Unit_6_6_Dimensionality_Reduction-lDyEk72TezE.mp4" "Unit_6_5q_Clustering_Summary-DH7FWwCgx5M.mp4" "Unit_6_5p_Choosing_k-_-Ol1cXIWvQ.mp4" "Unit_6_5o_Answer-DODedtJZ3FA.mp4" "Unit_6_5n_Question-0HENenZeAsE.mp4" "Unit_6_5m_Answer-ZcTAhLG4OSs.mp4" "Unit_6_5l_Question-TFViJ3P6NwM.mp4" "Unit_6_5k_Answer-JW74VRSnZAk.mp4" "Unit_6_5j_EM_Algorithm-tTr7547zVCc.mp4" "Unit_6_5i_EM_as_Generalization_of_k_Means-1CWDWmF0i2s.mp4" "Unit_6_5h_Gaussian_Summary-mlz-1yfyeoU.mp4" "Unit_6_5g_Answer-FWOa3qoYOd8.mp4" "Unit_6_5f_Question-pRGEQy7BgiY.mp4" "Unit_6_5e_Answer-Fr33yWlbvLk.mp4" "Unit_6_5d_Question-R4izy_dyQzA.mp4" "Unit_6_5c_Answer-n1Ikbbe1g5M.mp4" "Unit_6_5b_Maximum_Likelihood-rMcw3uu4efY.mp4" "Unit_6_5a_Gaussian_Learning-S4-694lgERs.mp4" "Unit_6_5_Expectation_Maximization-_DhelJs0BFc.mp4" "Unit_6_4f_Answer-LgxZJ7GAB3o.mp4" "Unit_6_4e_Question-3zlXl82LUVI.mp4" "Unit_6_4d_Answer-uxdSfp9n2CY.mp4" "Unit_6_4c_Question-oQYC32jKCvg.mp4" "Unit_6_4b_Answer-0RMhiWfe73M.mp4" "Unit_6_4a_k_Means_Algorithm-myqnyxkdQpc.mp4" "Unit_6_4_k_Means_Clustering_Example-zaKjh2N8jN4.mp4" "Unit_6_3_Google_Street_View_and_Clustering-W2dkDmHFMWg.mp4" "Unit_6_2_Terminology-EZEOXNFgu8M.mp4" "Unit_6_1c_Answer-4uj36iX1Pkk.mp4" "Unit_6_1b_Question-GxeyaI9_P4o.mp4" "Unit_6_1a_Answer-kFwsW2VtWWA.mp4" "Unit_6_1_Unsupervised_Learning-s4Ou3NRJc-s.mp4" "Unit_5_9_Answer-fPkxtmxRt5k.mp4" "Unit_5_8_SPAM_Detection-wMMGexgmES4.mp4" "Unit_5_7_Occam_s_Razor-FHJx9RVVKFg.mp4" "Unit_5_6_Supervised_Learning-nxX9Ihi4HZQ.mp4" "Unit_5_5_Taxonomy-m-hcAePIkWY.mp4" "Unit_5_55_Congratulations-Ta7tyUB-EqM.mp4" "Unit_5_54_Problems_with_kNN-tOSoqfK9UNE.mp4" "Unit_5_53_k_as_Smoothing_Parameter-mhrG7atAn4Q.mp4" "Unit_5_52_Answer-PoRpuj4bijU.mp4" "Unit_5_51_kNN_Definition-r1PWSm6xMUk.mp4" "Unit_5_50_k_Nearest_Neighbors-ZLEilYyt28c.mp4" "Unit_5_4_Stanley_DARPA_Grand_Challenge-Q1xFdQfq5Fk.mp4" "Unit_5_49_Answer_and_SVMs-xRf9wAeU1kI.mp4" "Unit_5_48_Perceptron-yOSGC67bOIk.mp4" "Unit_5_47_Gradient_Descent_Implementation-Iy9gzbQ7_3g.mp4" "Unit_5_46_Answer-R1o9wbhnv94.mp4" "Unit_5_45_Question-2oy1QoXsvGQ.mp4" "Unit_5_44_Answer-5Vm8ibmxroE.mp4" "Unit_5_43_Question-dKKigX6nhyU.mp4" "Unit_5_42_Answer-rAcwpZJqAZA.mp4" "Unit_5_41_Minimizing_Complicated_Loss_Functions-0RmqLOxexh4.mp4" "Unit_5_40_Linear_Regression_and_Complexity_Control-4G5mH4FW-WY.mp4" "Unit_5_39_Answer-PYZ-7YS5T0k.mp4" "Unit_5_38_Problems_with_Linear_Regression-w7Ip8r0EIJQ.mp4" "Unit_5_37_Answer-ocviSEb04bk.mp4" "Unit_5_36_Quadratic_Loss-wUFYzzrd6TQ.mp4" "Unit_5_35_More_Linear_Regression-v4XIkABA1N0.mp4" "Unit_5_34_Answer-pLwMXAPKdas.mp4" "Unit_5_33_Linear_Regression-4bGWN67R9G0.mp4" "Unit_5_32_Answer-4kXyi3KWcSw.mp4" "Unit_5_31_Classification_vs_Regression-5RLRKkzYWuQ.mp4" "Unit_5_30_Overfitting_Prevention--jswWk8YLro.mp4" "Unit_5_2_What_is_Machine_Learning-tEzGdI9nQt4.mp4" "Unit_5_29_Digit_Recognition-kD2wD_MDVk4.mp4" "Unit_5_28_Advanced_SPAM_Filtering-GSHJspQH15c.mp4" "Unit_5_27_Summary_Naive_Bayes-c2yFCp6BrEA.mp4" "Unit_5_26_Answer-oh4uc-8O6Pc.mp4" "Unit_5_25_Question-RJAFdBfGOrY.mp4" "Unit_5_24_Answer-DjvGl1qRVdE.mp4" "Unit_5_23_Question-2Ar6jFKZhUM.mp4" "Unit_5_22_Answer-2sKSZHkQPrc.mp4" "Unit_5_21_Answer_and_Laplace_Smoothing-0BpC-cLDCIE.mp4" "Unit_5_20_Question-dfVAnFFxFP4.mp4" "Unit_5_19_Answer-eSbURIQ6pSQ.mp4" "Unit_5_18_Question-qVdxj8XOB00.mp4" "Unit_5_17_Answer-lQe4iNP6HDA.mp4" "Unit_5_16_Question-2BFCqec6n04.mp4" "Unit_5_15_Answer--Pms2FiJQIA.mp4" "Unit_5_14_Relationship_to_Bayes_Networks-MvwZNmJQIJw.mp4" "Unit_5_13_Answer-4q4Tk-4Long.mp4" "Unit_5_12_Maximum_Likelihood-QBlERVSlFx4.mp4" "Unit_5_11_Answer-WFE-dmEJZF8.mp4" "Unit_5_10_Question-Diqx3Z20YWc.mp4" "Unit_1_9_Robotic_Car_Answer_ad-QCfnwEFjT4U.flv" "Unit_1_8_Robotic_Car_ad-J4nNzsFWrbU.flv" "Unit_1_7_Poker_Answer_ad-YNJLbL0CmJU.flv" "Unit_1_6_Poker_ad-BtYiJ2XQm9U.flv" "Unit_1_5_Checkers_Answer_ad-_e2dGMKssKY.flv" "Unit_1_4_Terminology_ad-xp-IqQdZP08.flv" "Unit_1_3_Applications_of_AI_ad-ifjGEBaT930.flv" "Unit_1_2_Intelligent_Agents_ad-GL1l_fbhaIA.flv" "Unit_1_1_Introduction_ad-UlN7JgtjydY.flv" "Unit_1_15_Congratulations_ad-l0eloztC7FM.flv" "Unit_1_14_Chinese_Translation_3_Answer_1_ad-SGJdbYEvCnM.flv" "Unit_1_13_Chinese_Translation_2_Answer_1_ad-aZCorKdH2Do.flv" "Unit_1_12_Chinese_Translation_Answer_1_ad-9lJberEFxYE.flv" "Unit_1_11_Examples_of_AI_in_Practice_1_ad-0WvdfOdZKYQ.flv" "Unit_1_10_AI_and_Uncertainty_ad-qu73Md-kqoI.flv" "Unit_10_25_Conclusion_mp4-aFnqXy1wCWU.mp4" "Unit_10_24_Pacman_2_mp4-Y_LP6acepqQ.mp4" "Unit_10_23_Pacman_1_mp4-dtp2ZDIjMsI.mp4" "Unit_10_22_Q_Learning_2_mp4-4vV4SNEdLt8.mp4" "Unit_10_21_Q_Learning_1_mp4-6OIHXZthbhs.mp4" "Unit_10_20_Exploration_Agent_Results_mp4-Xr7QzEYG3N0.mp4" "Unit_10_19_Exploration_Agents_mp4-Mi2HFAn6SgE.mp4" "Unit_10_18_Errors_in_Utility_Answers_mp4-AlcPU5ZoPwI.mp4" "Unit_10_17_Errors_in_Utility_Questions_mp4-Bs2nrLB8LX0.mp4" "Unit_10_16_Balancing_Policy_mp4-PzDgvih6JDA.mp4" "Unit_10_15_Greedy_Agent_Results_mp4-FvXWpsvu7MM.mp4" "Unit_10_14_Active_Reinforcement_Learning_mp4-7yvclGcujGY.mp4" "Unit_10_13_Weaknesses_Answers_mp4-aWcC5wVEkcs.mp4" "Unit_10_12_Weaknesses_Question_mp4-rbaxXB_Cd9w.mp4" "Unit_10_11_Passive_Agent_Results_mp4-tdtAZFbvDPc.mp4" "Unit_10_10_Passive_Temporal_Difference_Learning_mp4-DZzffdHNqtQ.mp4" "Unit_10_09_Passive_vs_Active_mp4-BOJUzeVswYA.mp4" "Unit_10_08_Agents_of_Reinforcement_Learning_mp4-dX8VPYXd3hs.mp4" "Unit_10_07_Solving_a_MDP_mp4-k-5e935u9hE.mp4" "Unit_10_06_MDP_Review_mp4-ngXzkRWosEw.mp4" "Unit_10_05_Forms_of_Learning_Answer_mp4-lTkm5LaVDMU.mp4.part" "Unit_10_04_Forms_of_Learning_Question_mp4-jw86cqeglm8.mp4.part" "Unit_10_03_Forms_of_Learning_mp4-iHEjWGFuPh4.mp4" "Unit_10_02_Successes_mp4-jYxSeyVPOAs.mp4.part" "Unit_10_01_Introduction_mp4-haGrozelOGA.mp4" "Unit_0_Introduction_ad-8kDxs4DMcc4.flv" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/test/comparison/test/backcalculation/" (20101 40951) "usage.clj" "revesrse_calculations.clj" "economy7.clj" "discounts.clj" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/src/comparison/backcalculation/" (20120 7656) "usage.clj" "discounts.clj" "../" "./")
+
+ ("/Users/jonneale/Work/energy-bank-validation/" (20034 57047) "validate.clj" "#validate.clj#" "../" "./")
+
+ ("/Users/jonneale/Scratch/Euler/" (20034 57043) "testing-ground.clj" "sieve-of-eratosthenes.clj" "pyramid.clj" "notes.txt" "lazy-seq.clj" "euler1.clj" "9.clj" "8.clj" "8-2.clj" "75.clj" "7.clj" "6.clj" "56.clj" "5.clj" "5-2.clj" "48.clj" "40.clj" "4.clj" "33.clj" "3.clj" "28.clj" "26.clj" "25.clj" "20.clj" "2.clj" "17.clj" "16.clj" "14.clj" "13.clj" "12.clj" "12.3.clj" "12-2.clj" "104.clj" ".git/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/src/comparison/" (20120 7656) "web/" "domain/" "core.clj" "configuration.clj" "calculation/" "backcalculation/" "../" "./")
+
+ ("/Users/jonneale/Scratch/clojure-demos/" (20028 9038) "main.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/connect-4/" (20033 27123) "test/" "src/" "README" "project.clj" "lib/" "classes/" ".gitignore" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/test/resources/" (19963 30654) "single_fuel_standard_electricity_plan.json" "single_fuel_gas_plan.json" "single_fuel_gas_lowest_discount.json" "single_fuel_economy_7_plans.json" "single_fuel_economy_7_plan.json" "scottish_hydro_better_plan.json" "retention_plan.json" "gas_plan_with_nil_rate.json" "dual_fuel_plan.json" "dual_fuel_extra_charges.json" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/test/comparison/test/" (20000 4000) "web/" "core.clj" "calculation/" "backcalculation/" "../" "./")
+
+ ("/Users/jonneale/Work/Release/" (19749 42082) "YoAhorro/" "WebSiteRoot/" "WebResources/" "Webchat/" "Water/" "uSwitchForBusiness/" "Tracking/" "Tools/" "Tests/" "TariffServices/" "SupplierLink/" "SiteRoot/" "SiteResources/" "SiteMap/" "Shared/" "SessionServices/" "Services/" "Savings/" "RFU/" "RewriteRedirects/" "RepaintWebresources/" "redirectIISToThisBranch_OnDevBox.bat" "ProjectTemplates/" "ProcessEmails/" "PressRoom/" "Portal/" "PartnerSnippets/" "News/" "Mortgages/" "MoneySaving/" "LocationService/" "Loans/" "LinkExchange/" "LeadDistribution/" "International/" "Insurance/" "HeatingCover/" "Energy/" "Directory/" "Delivery/" "DataImporter/" "DatabaseScripts/" "Customisation/" "CustomerSatisfactionService/" "Customer/" "CurrentAccounts/" "CreditCards/" "CorporatePages/" "Config/" "Communications/" "CalculatorCoordinator/" "BuyCoUk/" "Banking/" "Assemblies/" ".svn/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/test/comparison/" (19896 16766) "test/" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/src/" (19896 16766) "comparison/" "../" "./")
+
+ ("/Users/jonneale/Scratch/codetest/src/" (19909 15264) "codetest/" "../" "./")
+
+ ("/Users/jonneale/Scratch/codetest/" (19909 15826) "test/" "src/" "README" "project.clj" "lib/" "classes/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/jonneale/Scratch/codetest/test/" (19909 15845) "example-plans/" "codetest/" ".DS_Store" "../" "./")
+
+ ("/Users/jonneale/Work/energy-comparison/test/" (19896 16766) "resources/" "comparison/" "../" "./")
+
+ ("/Users/jonneale/Scratch/code-test/src/" (19909 14172) "usage.clj" "code_test/" "../" "./")
+
+ ("/Users/jonneale/Scratch/code-test/test/code_test/test/" (19909 14462) "usage_tests.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/code-test/" (19909 14001) "test/" "src/" "README" "project.clj" "pom.xml" "lib/" "code-test-1.0.0-SNAPSHOT.jar" "classes/" ".gitignore" "../" "./")
+
+ ("/Users/jonneale/Scratch/code-test/test/" (19909 14171) "usage_tests.clj" "plans/" "code_test/" "../" "./")
+
+ ("/Users/jonneale/Scratch/code-test/test/code_test/" (19781 41703) "test/" "../" "./")
+
+ ("/Users/jonneale/Scratch/sicp-examples/week8/" (19810 8629) "2.17.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/sicp-examples/week6/" (19814 20557) "notes.clj" "2.5.clj" "2.4.clj" "2.3.clj" "2.2.clj" "2.1.clj" "#2.4.clj#" "../" "./")
+
+ ("/Users/jonneale/Scratch/sicp-examples/" (19810 7770) "week8/" "week7/" "week6/" "week5/" "week4/" "week3/" "week2/" "week1.clj" "week1/" "test/" "src/" "README.md" "README" "project.clj" "notes/" "lib/" "classes/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jonneale/Scratch/sicp-examples/week7/" (19786 30233) "2.9.clj" "2.8.clj" "2.7.clj" "2.6.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/sicp-examples/week4/" (19749 31626) "1.24.clj" "1.23.clj" "1.22.clj" "1.21.clj" "1.20.clj" "1.18.clj" "1.17.clj" "1.16.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/dojo/src/dojo/" (19775 8052) "core.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/dojo/src/" (19775 8052) "dojo/" "../" "./")
+
+ ("/Users/jonneale/Scratch/dojo/" (19775 8065) "test/" "src/" "README" "project.clj" "lib/" "classes/" ".gitignore" "../" "./")
+
+ ("/Users/jonneale/Scratch/clork/src/" (19775 1816) "world.clj" "repl-history.txt" "clork.clj" "../" "./")
+
+ ("/Users/jonneale/Scratch/clork/lein-demo/" (19775 1816) "clojure-dojo-leiningen.el" "../" "./")
+
+ ("/Users/jonneale/Scratch/clork/" (19775 1840) "test/" "src/" "README" "project.clj" "lib/" "lein-demo/" "classes/" ".gitignore" ".git/" "../" "./")
+
+ ("/usr/" (19616 28383) "X11R6/" "X11/" "standalone/" "share/" "sbin/" "local/" "llvm-gcc-4.2/" "libexec/" "lib/" "include/" "etc/" "bin/" "../" "./")
+
+ ("/usr/local/" (19657 24036) "var/" "share/" "README.md" "mysql-5.1.50-osx10.6-x86_64/" "mysql/" "Library/" "lib/" "include/" "git/" "etc/" "Cellar/" "bin/" ".gitignore" ".git/" "../" "./")
+
+ ("/usr/local/Cellar/" (19657 24061) "sphinx/" "redis/" "readline/" "mysql-connector-c/" "mysql/" "mongodb/" "little-cms/" "libtiff/" "jpeg/" "jasper/" "imagemagick/" "emacs/" "cmake/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/" (19637 36888) "23.2/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/23.2/" (19637 37230) "var/" "share/" "README" "Emacs.app/" "COPYING" "ChangeLog" "bin/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/23.2/share/" (19637 37206) "man/" "info/" "icons/" "emacs/" "applications/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/23.2/share/info/" (19637 37229) "woman" "widget" "viper" "vip" "url" "tramp" "speedbar" "smtpmail" "sieve" "ses" "semantic" "sc" "sasl" "remember" "reftex" "rcirc" "pgg" "pcl-cvs" "org-3" "org-2" "org-1" "org" "nxml-mode" "newsticker" "mh-e-2" "mh-e-1" "mh-e" "message" "mairix-el" "info" "idlwave" "gnus-5" "gnus-4" "gnus-3" "gnus-2" "gnus-1" "gnus" "forms" "flymake" "eudc" "eshell" "erc" "epa" "emacs-mime" "emacs-8" "emacs-7" "emacs-6" "emacs-5" "emacs-4" "emacs-3" "emacs-2" "emacs-1" "emacs" "elisp-9" "elisp-8" "elisp-7" "elisp-6" "elisp-5" "elisp-4" "elisp-3" "elisp-2" "elisp-11" "elisp-10" "elisp-1" "elisp" "eintr-3" "eintr-2" "eintr-1" "eintr" "eieio" "efaq" "edt" "ediff" "ede" "ebrowse" "dired-x" "dir" "dbus" "cl" "ccmode-2" "ccmode-1" "ccmode" "calc-6" "calc-5" "calc-4" "calc-3" "calc-2" "calc-1" "calc" "autotype" "auth" "ada-mode" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
