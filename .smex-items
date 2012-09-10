@@ -19,5 +19,5 @@
  (package-refresh-contents . 1)
  (grep-find . 2)
  (paredit-mode . 2)
- (load-file . 2)
+ (load-file . 3)
 )
