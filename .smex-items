@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ load-file
  package-list-packages
  paredit-mode
  package-install
  grep-find
  package-refresh-contents
  cd
- 5x5
 )
 
 ;; ----- smex-data -----
@@ -19,4 +19,5 @@
  (package-refresh-contents . 1)
  (grep-find . 2)
  (paredit-mode . 2)
+ (load-file . 2)
 )

@@ -26,6 +26,10 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(ac-config-default)
 ;; ENVIRONMENT
 ;;--------------------------------------------------
 (global-set-key (kbd "s-3") '(lambda () (interactive) (insert "#")))
