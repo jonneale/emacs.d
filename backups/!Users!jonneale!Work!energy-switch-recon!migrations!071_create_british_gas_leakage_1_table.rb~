@@ -1,0 +1,45 @@
+Sequel.migration do
+  change do
+    create_table(:british_gas_leakage_1) do
+      primary_key :id
+      Integer :week_no
+      String  :acc_no
+      String  :contract_type
+      String  :cust1_title
+      String  :cust1_forename
+      String  :cust1_initial
+      String  :cust1_surname
+      Date    :cust1_dob
+      String  :sadd_hseno
+      String  :sadd_hsename
+      String  :sadd_flatno
+      String  :sadd_line1
+      String  :sadd_line2
+      String  :sadd_line3
+      String  :sadd_locality
+      String  :sadd_city
+      String  :sadd_county
+      String  :postcode
+      
+      Date    :supply_start_date
+      Date    :gain_date
+      String  :product
+      String  :sales_ref
+      String  :mprn
+      String  :contact_fst_name
+      String  :contact_last_name
+      String  :house_num
+      String  :house_name
+      String  :postcode
+      String  :x_ucrn_num
+      String  :payment_type
+      String  :media_code
+      String  :sales_channel_subset
+      String  :tariff
+      String  :email
+      String  :report_file_name
+      Integer :batched_switches_id
+    end
+  end
+  
+end

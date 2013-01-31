@@ -1,0 +1,6 @@
+(ns htm.test.temporal-pooler
+  (:use [clojure.test]
+        [htm.temporal-pooler]))
+
+(deftest inital-test
+  (is (true? true)))

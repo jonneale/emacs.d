@@ -1,0 +1,55 @@
+(ns energy-java-bank-wizard.test.validate-details
+  (:use [clojure.test]
+        [energy-java-bank-wizard.validate-details :only (valid?)]))
+
+(deftest validating-results
+  (testing "normal range"
+    (is (valid? {:result1 0
+                 :result2 0}))
+    (is (not (valid? {:result1 2
+                      :result2 64})))
+    (is (valid? {:result1 -1
+                 :result2 1073741824})))
+  (testing "suppressions"
+    (is (valid? {:result1 1
+                 :result2 0}))
+    (is (valid? {:result1 0
+                 :result2 1}))
+    (is (valid? {:result1 1048576
+                 :result2 0})))
+  (testing "errors"
+    (is (not (valid? {:result1 4
+                      :result2 0})))
+    (is (not (valid? {:result1 0
+                      :result2 64})))
+    (is (not (valid? {:result1 4
+                      :result2 64}))))
+  (testing "combination of two errors should be an error"
+    (is (not (valid? {:result1 6
+                      :result2 0})))
+    (is (not (valid? {:result1 0
+                      :result2 192})))
+    (is (not (valid? {:result1 6
+                      :result2 192}))))
+  (testing "combination of normal range and suppression should be valid"
+    (is (valid? {:result1 512
+                 :result2 0}))
+    (is (valid? {:result1 0
+                 :result2 32}))
+    (is (valid? {:result1 1073741824
+                 :result2 512}))
+    (is (valid? {:result1 (+ 512 2048 1048576)
+                 :result2 0}))
+    (is (valid? {:result1 (+ 512 2048 1048576)
+                 :result2 (+ 512 32 16)})))
+  (testing "combination of error and suppression should be error"
+    (is (not (valid? {:result1 (+ 512 2 4 8)
+                      :result2 0})))
+    (is (not (valid? {:result1 (+ 512 2)
+                      :result2 0})))
+    (is (not (valid? {:result1 (+ 512 2048 1048576 128)
+                      :result2 0})))
+    (is (not (valid? {:result1 0
+                      :result2 (+ 4 8 16 64)})))
+    (is (not (valid? {:result1 0
+                      :result2 (+ 4 64)})))))

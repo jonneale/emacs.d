@@ -1,23 +1,42 @@
 
 ;; ----- smex-history -----
 (
- load-file
  package-list-packages
- paredit-mode
- package-install
- grep-find
  package-refresh-contents
- cd
+ kill-matching-buffers
+ paredit-mode
+ rgrep
+ replace-string
+ rename-file
 )
 
 ;; ----- smex-data -----
 (
  (w3-fetch . 1)
- (clojure-jack-in . 2)
- (package-install . 6)
- (package-list-packages . 5)
- (package-refresh-contents . 1)
+ (clojure-jack-in . 186)
+ (package-install . 8)
+ (package-list-packages . 11)
+ (package-refresh-contents . 6)
  (grep-find . 2)
- (paredit-mode . 2)
+ (paredit-mode . 146)
  (load-file . 3)
+ (cd . 1)
+ (make-directory . 10)
+ (rename-file . 13)
+ (rgrep . 57)
+ (nrepl-jack-in . 52)
+ (kill-matching-buffers . 18)
+ (replace-string . 26)
+ (color-theme-solarized . 3)
+ (nrepl-mode . 3)
+ (slime-mode . 3)
+ (clojure-mode . 4)
+ (align-regexp . 4)
+ (nrepl . 6)
+ (clojure-test-run-test . 2)
+ (grep . 1)
+ (nrepl-popup-buffer-quit . 1)
+ (kill-buffer . 1)
+ (nrepl-restart . 2)
+ (nrepl-load-current-buffer . 2)
 )

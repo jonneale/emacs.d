@@ -1,0 +1,39 @@
+(ns energy-switch-recon.updates.edf.reconcile-acquisition
+  (:require [energy-switch-recon.config   :as config]
+            [energy-switch-recon.dates    :as date]
+            [clojure.string               :as s])
+  (:use [clojure.tools.cli :only (cli)]
+        [energy-switch-recon.db.db-entities]
+        [korma.db]
+        [korma.core])
+  (:gen-class))
+
+(defn switches-with-commission-due
+  [service-type report-name]
+  (exec-raw ["SELECT batched_switches.id AS 'switch-id', edf_updates.id AS 'edf-update-id', edf_updates.status AS 'status', edf_updates.cancellation_reason AS 'cancellation-reason', true AS 'paid-status', edf_updates.product as 'fuel'
+              FROM batched_switches
+              JOIN edf_updates ON batched_switches.supplier_urn = SUBSTRING(edf_updates.contract_number, 15, 10)
+              WHERE edf_updates.product = ?
+              AND edf_updates.type = ?
+              AND bs.supplier_name_key = 'edf'
+              AND edf_updates.report_file_name = ?" [service-type "commission-due" report-name]] :results))
+
+(defn switches-that-have-been-cancelled
+  [service-type report-name]
+  (exec-raw ["SELECT batched_switches.id AS 'switch-id', edf_updates.id AS 'edf-update-id', edf_updates.status AS 'status', edf_updates.cancellation_reason AS 'cancellation-reason', false AS 'paid-status', edf_updates.product as 'fuel'
+              FROM batched_switches
+              JOIN edf_updates ON batched_switches.supplier_urn = SUBSTRING(edf_updates.contract_number, 15, 10)
+              WHERE edf_updates.product = ?
+              AND edf_updates.type = ?
+              AND bs.supplier_name_key = 'ed'f
+              AND edf_updates.report_file_name = ?" [service-type "cancellations" report-name]] :results))
+
+(defn match-updates-to-switches
+  [filename]
+  (let [switches  (concat (switches-with-commission-due elec filename)
+                          (switches-with-commission-due gas filename)
+                          (switches-that-have-been-cancelled elec filename)
+                          (switches-that-have-been-cancelled gas filename))]
+    (doseq [switch switches]
+      (update-supplier-status switch)
+      (insert-match-type! switch filename))))

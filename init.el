@@ -2,13 +2,21 @@
 ;;--------------------------------------------------
 
 (require 'package)
+
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 (package-initialize)
+
+;; Always revert to file on disk if it changes
+(global-auto-revert-mode t)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
-
+		
 (defvar my-packages '(color-theme
                       color-theme-solarized
                       starter-kit
@@ -103,6 +111,11 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
 
+(setenv "PATH" (shell-command-to-string "echo $PATH"))
+
+;; nrepl
+(when (not (package-installed-p 'nrepl))
+  (package-install 'nrepl))

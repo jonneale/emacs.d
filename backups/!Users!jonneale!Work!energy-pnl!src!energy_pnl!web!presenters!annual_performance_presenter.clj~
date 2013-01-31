@@ -1,0 +1,45 @@
+(ns energy-pnl.web.presenters.annual-performance-presenter
+  (:require [energy-pnl.domain.switches :as switches]
+            [energy-pnl.domain.revenue  :as revenue]
+            [energy-pnl.domain.dropout  :as dropout])
+  (:use     [energy-pnl.map])
+  (:import  [org.joda.time YearMonth]))
+
+(defn dropouts
+  [supplier-name-key year-month]
+  (let [supplier-key (keyword supplier-name-key)
+        effective-dropout (get-in (dropout/get-supplier-dropouts year-month) [supplier-key :effective-dropout])
+        predicted-dropout (get-in (dropout/get-supplier-dropouts-snapshot year-month) [supplier-key :effective-dropout])]
+    {:effective-dropout effective-dropout
+     :predicted-dropout predicted-dropout}))
+
+(defn monthly-revenue-for-supplier
+  [supplier-name-key month-switches]
+  (reduce +
+          (revenue/calculate-daily-revenue
+           (keyword supplier-name-key)
+           (map last month-switches))))
+
+(defn calculate-net-revenue
+  [gross-revenue supplier-name-key year-month]
+  (let [{:keys [effective-dropout predicted-dropout]} (dropouts supplier-name-key year-month)]
+    {:predicted-net-revenue (when predicted-dropout (* (/ predicted-dropout 100.0) gross-revenue))
+     :actual-net-revenue    (when effective-dropout (* (/ effective-dropout 100.0) gross-revenue))}))
+
+(defn monthly-data
+  [supplier-name-key year month]
+  (let [year-month (YearMonth. (Integer. year) (Integer. month))
+        gross-revenue (monthly-revenue-for-supplier supplier-name-key (switches/month-switches year-month))]
+    (calculate-net-revenue gross-revenue supplier-name-key year-month)))
+
+(defn all-switches-for-supplier-for-year
+  [supplier-name-key year]
+  (reduce (fn [agg month]
+            (into agg {month (monthly-data supplier-name-key year month)}))
+          {}
+          (range 1 13)))
+
+(defn present
+  [supplier-name-key year]
+  (let [annual-switches (all-switches-for-supplier-for-year supplier-name-key year)]
+    annual-switches))

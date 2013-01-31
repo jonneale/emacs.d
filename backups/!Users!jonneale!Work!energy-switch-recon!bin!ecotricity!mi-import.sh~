@@ -1,0 +1,2 @@
+#! /bin/bash
+lein run -m energy-switch-recon.mi.etl british-gas $@

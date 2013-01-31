@@ -1,0 +1,45 @@
+(ns back-office-switch-report.hourly.working-consumer
+  (:require
+            [langohr.core      :as rmq]
+            [langohr.channel   :as lch]
+            [langohr.queue     :as lq]
+            [langohr.consumers :as lc]
+            [langohr.basic     :as lb]
+            [clojure.data.json              :as json]
+            [back-office-switch-report.import.etl :as etl]
+            [back-office-switch-report.config     :as config])
+  (:use     [korma.core]
+            [clojure.pprint]
+            [back-office-switch-report.db.entities])
+  (:gen-class))
+
+(defn- insert-switch
+  [message]
+  (println message))
+
+(defn- message-handler
+  [ch {:keys [content-type delivery-tag type] :as meta} ^bytes payload]
+  (let [message (String. payload "UTF-8")]
+    (insert-switch message)))
+
+
+(defn start-consumer
+  "Starts a consumer in a separate thread"
+  [ch queue-name]
+  (let [handler (fn [ch metadata ^bytes payload]
+                  (println (format "[consumer] %s received a message: %s"
+                                   queue-name
+                                   (String. payload "UTF-8"))))
+        thread  (Thread. (fn []
+                           (lc/subscribe ch queue-name message-handler :auto-ack true)))]
+    (.start thread)))
+
+(defn -main
+  [& args]
+  (let [conn  (rmq/connect)
+        ch    (lch/open conn)
+        ename "switches-received"]
+    (dotimes [i 10]
+      (let [q (.getQueue (lq/declare ch "" :exclusive false :auto-delete true))]
+        (lq/bind    ch q ename)
+        (start-consumer ch q)))))

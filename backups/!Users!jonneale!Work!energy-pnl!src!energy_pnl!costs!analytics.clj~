@@ -1,0 +1,21 @@
+(ns energy-pnl.costs.analytics
+  (:use [clojure.java.io]
+        [clojure.data.json])
+  (:require [clj-http.client       :as client]
+            ))
+
+(def auth-url
+  "https://accounts.google.com/o/oauth2/token")
+
+(defn refresh-token
+  "If this stops working/expires, you'll need to generate a new one. See resources/generate-new-refresh-token.txt for details"
+  []
+  "1/vaXUBbpdTCtLiQcigXSd-QX2OeFRNYjOag84R2Z34Y8")
+
+(defn get-auth-token
+  []
+  (-> (client/post auth-url
+                   {:headers {"content-type" "application/x-www-form-urlencoded"}
+                    :body (str "client_id=992699852621-dajfjpdpbf4iod95gnd2175a7av5mkir.apps.googleusercontent.com&client_secret=uhSS518hG37x11DSDfB5R2V8&refresh_token=" (refresh-token) "&grant_type=refresh_token")})
+      :body
+      ))

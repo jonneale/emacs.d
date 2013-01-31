@@ -1,0 +1,15 @@
+;; redis caching
+
+(def pool (car/make-conn-pool))
+(def spec-server1 (car/make-conn-spec))
+
+(defn- get-cached-switches
+  [date]
+  (car/with-conn pool spec-server1
+    (car/get (unparse (formatters :year-month-day) date))))
+
+(defn- cache-switches
+  [date switches]
+  (car/with-conn pool spec-server1
+    (car/set (unparse (formatters :year-month-day) date)
+             switches)))

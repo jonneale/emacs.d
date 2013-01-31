@@ -1,0 +1,6 @@
+(ns energy-pnl.domain.switches-test
+  (:require [energy-pnl.domain.switches :as s])
+  (:use [clojure.test]))
+
+(deftest test
+  (is (= 1 2)))

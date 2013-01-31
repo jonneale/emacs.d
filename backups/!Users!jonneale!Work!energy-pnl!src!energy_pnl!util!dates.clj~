@@ -1,0 +1,41 @@
+(ns energy-pnl.util.dates
+  (:use     [clj-time.core   :only [now date-time interval within? plus minus days hours after? before? today-at-midnight]]
+            [clj-time.format :only [formatters unparse parse with-zone]]
+            [clj-time.local :only [local-now]]))
+
+;; date and time
+
+(defn parse-date
+  ([date] (parse-date date (formatters :date)))
+  ([date formatter] (parse (with-zone formatter (.getZone (local-now))) date)))
+
+(defn- days-in-month
+  [year-month]
+  (.getActualMaximum (GregorianCalendar. (.getYear year-month)
+                                         (- (.getMonthOfYear year-month) 1)
+                                         1)
+                     Calendar/DAY_OF_MONTH))
+
+(defn- today-at-seven
+  []
+  (let [today (today-at-midnight)]
+    (date-time (.getYear today) (.getMonthOfYear today) (.getDayOfMonth today) 7)))
+
+(defn- after-today-at-midnight?
+  [date]
+  (not (before? date (today-at-midnight))))
+
+(defn- yesterday-at-midnight
+  []
+  (minus (today-at-midnight) (days 1)))
+
+(defn- yesterday?
+  [date]
+  (within? (interval (yesterday-at-midnight)
+                     (plus (yesterday-at-midnight) (days 1)))
+           date))
+
+(defn- yesterdays-switches-not-batched?
+  []
+  (not (after? (now) (today-at-seven))))
+

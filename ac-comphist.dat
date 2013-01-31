@@ -1,0 +1,250 @@
+((("json/read-str" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("->" .
+   [1 0])
+  (":name" .
+   [3 0 0 0 0])
+  (":content" .
+   [4 0 0 0 0 0 0 0])
+  ("ring/url-encode" .
+   [1 0 0 0 0 0 0 1 2 3 0 0 0 0 0])
+  (":headers" .
+   [1 0 0 0 0 0 0 0])
+  (":body" .
+   [3 0 0 0 0])
+  (":form-params" .
+   [0 0 0 0 0 1 0 0 1 0 0 0])
+  ("refresh-token" .
+   [0 0 0 0 0 0 0 4 0 0 0 0 0])
+  ("auth-url" .
+   [3 0 0 0 0 0 0 0])
+  ("client/post" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("energy-java-bank-wizard.web.validate-details" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("for" .
+   [1 0 0])
+  ("hidden-neurons" .
+   [1 0 0 0 0 0 2 0 1 0 0 0 0 2])
+  ("activation-function-to-use" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("step-activation-function" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("aclone" .
+   [0 0 1 0 0 0])
+  ("data" .
+   [1 0 0 0])
+  (":data" .
+   [3 0 0 0 0])
+  ("Math/pow" .
+   [0 0 0 0 1 1 0 0])
+  ("final-weights" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("errors" .
+   [1 0 0 0 0 0])
+  ("activation-function" .
+   [0 0 0 0 0 0 1 0 0 0 3 0 1 0 0 0 0 0 2])
+  ("current-input" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("shuffle" .
+   [2 0 0 0 0 0 0])
+  ("initial-weights" .
+   [0 0 0 0 0 1 0 0 1 0 0 0 0 0 0])
+  ("iterate-over-inputs" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("iterate" .
+   [1 0 0 0 0 0 0])
+  ("into" .
+   [1 0 0 0])
+  ("averaged-error" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("and-inputs" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("inc" .
+   [2 0 0])
+  ("original-inputs" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("add-bias-term" .
+   [2 0 0 0 0 1 0 1 0 0 0 0 0])
+  ("all-inputs" .
+   [4 0 0 0 0 0 0 0 0 0])
+  (":keys" .
+   [6 0 0 0 0])
+  (":target" .
+   [6 0 0 1 0 0 0])
+  (":input" .
+   [13 0 0 0 0 0])
+  ("nil" .
+   [1 0 0])
+  ("address_manually_entered" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("not" .
+   [1 0 0])
+  ("address" .
+   [1 0 0 0 0 0 0])
+  ("house-number" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("string/blank?" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("dates/parse-date" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":date" .
+   [2 0 0 0 0])
+  ("dates" .
+   [1 0 0 0 0])
+  (":as" .
+   [3 0 0])
+  ("supplier-data.util.dates" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("address-and-meter-number-matching" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("WHERE" .
+   [1 0 0 0 0])
+  ("surname-and-postcode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("file" .
+   [0 0 0 1])
+  ("true" .
+   [2 0 0 0])
+  ("str" .
+   [6 0 0])
+  ("count" .
+   [6 0 0 0 0])
+  ("get-all-switches" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("switches" .
+   [2 0 0 0 0 0 0 0])
+  ("get-all-updates" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  (":results" .
+   [2 0 0 0 0 0 0 0])
+  ("exec-raw" .
+   [2 0 0 0 0 0 0 0])
+  ("filename" .
+   [5 0 0 0 0 0 0 0])
+  ("defn-" .
+   [1 0 0 0 0])
+  ("updates" .
+   [2 0 0 0 0 0 0])
+  ("update" .
+   [1 0 0 0 0 0])
+  ("let" .
+   [8 0 0])
+  ("sort" .
+   [1 0 0 0])
+  ("sort-by" .
+   [2 0 0 0 0 0 0])
+  ("days-between" .
+   [1 0 0 0 0 1 0 0 0 0 0 0])
+  ("defn" .
+   [13 0 0 0])
+  ("start-date" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("end-date" .
+   [2 0 0 0 0 0 0 0])
+  ("coerce/from-sql-date" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0])
+  ("coerce" .
+   [0 0 0 1 0 0])
+  ("first" .
+   [5 0 0 0 0])
+  ("filtered-results" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("println" .
+   [37 0 0 0 0 0 0])
+  ("switch" .
+   [2 0 0 0 0 0])
+  ("doall" .
+   [1 0 0 0 0])
+  ("result" .
+   [1 0 0 0 0 0])
+  ("meter-number-matching" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("import-phone-numbers" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1])
+  ("false" .
+   [1 0 0 0 0])
+  (":default" .
+   [1 0 0 0 0 0 0 0])
+  (":phone_number" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("options" .
+   [1 0 0 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("import-switches" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("energy-switch-recon.switch-management." .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("import-fn" .
+   [1 0 0 0 0 0 0 0 0])
+  ("delete-temp-switches" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("copy-extra-data-to-batched-switches" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("def" .
+   [6 0 0])
+  ("inputs" .
+   [18 0 0 0 0 0])
+  ("repeatedly" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("rand" .
+   [3 0 0 0])
+  ("take" .
+   [2 0 0 0])
+  ("loop" .
+   [1 0 0 0])
+  ("weights" .
+   [22 0 0 0 0 0 0])
+  ("reduce" .
+   [1 0 0 0 0 0])
+  ("error" .
+   [5 0 0 0 0])
+  ("calculate-error" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("map" .
+   [2 0 0])
+  ("fn" .
+   [2 0])
+  ("keys" .
+   [2 0 0 0])
+  ("last" .
+   [1 0 0 0])
+  ("last-input" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("output" .
+   [1 0 0 0 0 0])
+  ("target" .
+   [5 0 0 0 0 0])
+  ("activation" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("or" .
+   [4 0])
+  ("max-epochs" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("error-threshold" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("supplier-data.suppliers.ovo.address" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("testing" .
+   [1 0 0 0 0 0 0])
+  ("deftest" .
+   [2 0 0 0 0 0 0])
+  ("is" .
+   [2 0])
+  ("unit-type" .
+   [1 0 0 0 0 0 0 0 0])
+  ("input" .
+   [19 0 0 0 0])
+  ("inputs-with-bias" .
+   [0 0 0 0 0 0 0 4 0 0 0 1 0 0 1 0])
+  ("do" .
+   [2 0])
+  ("butlast" .
+   [1 0 0 0 0 0 0])
+  ("validate-supplier-data" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("some" .
+   [1 0 0 0])
+  ("account-number-result" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])))

@@ -1,0 +1,57 @@
+(ns energy-java-bank-wizard.web.validate-details)
+
+(def *messages* {"Standard" "Please check the account number and sort code combination as your details appear to be incorrect."
+                 "SystemError" "Our system is experiencing a technical error when validating your account details. [Result]."
+                 "Unknown" "Our system is experiencing a technical error when validating your account details. [Result]."})
+
+(def *suppress* {:result1 #{1 512 2048 4096 1048576 4194304 33554432 67108864 67108865 134217728 268435456 536870912 1073741824}
+                 :result2 #{1 2 4 8 16 32 512}})
+
+(def *errors* {:result1 {1 "[Standard]"
+                         2 "The sort code entered appears to be incorrect. Please check and re-enter your sort code."
+                         4 "[Standard]"
+                         8 "The details entered appear to be for a foreign account. Please enter UK bank account details."
+                         16 "[SystemError]"
+                         32 "The account number format appears to be incorrect. Please check and re-enter your account number."
+                         64 "The sort code format appears incorrect. Please check and re-enter your sort code."
+                         128 "[SystemError]"
+                         256 "The selected account cannot be used for Direct Debit purposes and therefore cannot be passed to the supplier. Please select another bank account to use if you have one."
+                         512 "The selected account is not in standard form and were transposed."
+                         1024 "The selected account cannot be used for Direct Debit purposes and therefore cannot be passed to the supplier. Please select another bank account to use if you have one."
+                         2048 "The selected account requires a reference or roll account number."
+                         4096 "Warning: This branch will not support Direct Credit transactions"
+                         8192 "[SystemError]"
+                         16384 "[SystemError]"
+                         32768 "[SystemError]"
+                         65536 "[SystemError]"
+                         131072 "[SystemError]"
+                         262144 "[SystemError]"
+                         524288 "[SystemError]"
+                         1048576 "Warning: Your licence to use BANK WIZARD will expire in less than 30 days. This error message will not be shown on live site but we should fix this as soon as possible."
+                         2097152 "[SystemError]"
+                         4194304 "Warning: This branch is due to close"
+                         8388608 "The branch of the selected account has closed and and therefore cannot be passed to the supplier. Please select another bank account to use if you have one."
+                         16777216 "The branch of the selected account has closed and and therefore cannot be passed to the supplier. Please select another bank account to use if you have one."
+                         33554432 "Warning: This branch is due to close."
+                         67108864 "This branch will not support claims for unpaid Cheque transactions."
+                         134217728 "This branch will not support Life Assurance Premiums transactions."
+                         268435456 "This branch will not support Building Society Credit transactions."
+                         536870912 "This branch will not support Dividend Interest Payment transactions."
+                         1073741824 "This branch will not support AUDDIS transactions."}
+               :result2 {1 "Warning: This account will not support Direct Credit transactions."
+                         2 "Warning: This account will not support Claims for Unpaid Cheque transactions."
+                         4 "Warning: This account will not support Life Assurance Premiums transactions."
+                         8 "Warning: This account will not support Building Society Credit transactions."
+                         16 "Warning: This account will not support Dividend Interest Payment transactions."
+                         32 "Warning: This account will not support AUDDIS transactions."
+                         64 "[SystemError]"
+                         128 "[SystemError]"
+                         256 "[SystemError]"
+                         512 "Information: Alternate information is available for this account."
+                         1024 "[SystemError]"
+                         2048 "[SystemError]"}})
+
+(defn validate-result
+  [account-number-result sort-code-result]
+  (some #{account-number-result} #{1 512 2048 4096 1048576 4194304 33554432 67108864 67108865 134217728 268435456 536870912 1073741824})
+  )

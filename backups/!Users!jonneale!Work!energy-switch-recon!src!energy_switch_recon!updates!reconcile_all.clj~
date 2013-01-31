@@ -1,0 +1,25 @@
+(ns energy-switch-recon.updates.reconcile-all
+  (:require [energy-switch-recon.updates.edf.reconcile
+             energy-switch-recon.updates.first-utility.reconcile
+             energy-switch-recon.updates.scottishpower.reconcile
+             energy-switch-recon.updates.npower.reconcile])
+  (:gen-class))
+
+(defn- get-recon-function
+  [{:keys [supplier-name-key]}]
+  (var-get (find-var (symbol (str "energy-switch-recon.updates." supplier-name-key ".reconcile/match-updates-to-switches")))) )
+
+(defn reconcile-all-updates!
+  [date]
+  (let [reports (reports-for-date date)]
+    (doseq [report reports]
+      ((get-recon-function report) (:report-file-name report)))))
+
+(defn -main [& args]
+  (let [[options args banner] (cli args
+                                   ["-d" "--start-date" "The date from which to perform recon"])]
+    (when (or (:help options)
+              (not (:start-date options)))
+      (println banner)
+      (System/exit 0))
+    (reconcile-all-updates! (:start-date options))))

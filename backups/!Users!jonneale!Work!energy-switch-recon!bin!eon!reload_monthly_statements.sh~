@@ -1,0 +1,10 @@
+#! /bin/bash
+
+for report in ./resources/supplier-reports/edf/monthly/brighton/*
+do 
+	filename=$(basename $report)
+	echo "Loading $report ..."
+	./bin/edf/load_monthly_commission_statement.sh --filepath $report --password "Brighton8"
+	echo "Reconciling $filename ..."
+	./bin/edf/recon.sh --filename $filename
+done

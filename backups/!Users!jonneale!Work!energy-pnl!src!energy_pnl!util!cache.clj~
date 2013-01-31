@@ -1,0 +1,35 @@
+(ns energy-pnl.cache
+  (:require [taoensso.carmine            :as car])
+  (:use     [clj-time.format :only [formatters unparse parse with-zone]]))
+
+;; redis caching
+
+(def pool (car/make-conn-pool))
+(def spec-server1 (car/make-conn-spec))
+
+
+(defn- get-value
+  [key]
+  (car/with-conn pool spec-server1
+    (car/get key)))
+
+(defn- store-value
+  [key data]
+  (car/with-conn pool spec-server1
+    (car/set key data)))
+
+(defn get-switches
+  [date]
+  (get-value (unparse (formatters :year-month-day) date)))
+
+(defn store-switches
+  [date switches]
+  (store-value (unparse (formatters :year-month-day) date) switches))
+
+(defn get-ppc-spend
+  [date]
+  (Double/parseDouble (get-value (str "ppc-spend-" (unparse (formatters :year-month-day) date)))))
+
+(defn store-ppc-spend
+  [date spend]
+  (store-value (str "ppc-spend-" (unparse (formatters :year-month-day) date)) spend))

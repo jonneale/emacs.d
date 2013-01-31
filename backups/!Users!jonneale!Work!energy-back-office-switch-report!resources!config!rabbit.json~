@@ -1,0 +1,16 @@
+{ 
+  "development": {
+    "host": "127.0.0.1",
+    "port": 5672,
+    "vhost": "/",
+    "password" : "guest",
+    "username": "guest"
+  },
+ "production": {
+    "host": "192.168.37.47",
+    "port": 5672,
+    "vhost": "/",
+    "password" : "guest",
+    "username": "guest"
+  }
+}
