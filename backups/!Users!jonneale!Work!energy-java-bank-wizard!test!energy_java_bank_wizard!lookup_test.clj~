@@ -1,4 +1,0 @@
-(ns energy-java-bank-wizard.test.lookup-test
-  (:use [clojure.test]
-        [energy-java-bank-wizard.web.validate-details :only (valid?)]))
-

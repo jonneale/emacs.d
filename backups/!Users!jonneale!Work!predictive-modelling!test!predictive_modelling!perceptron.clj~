@@ -1,8 +1,0 @@
-(ns predictive-modelling.test.perceptron
-  (:use     [clojure.test])
-  (:require [predictive-modelling.perceptron :as p]))
-
-(testing "feed forward"
-  (deftest should-multiply-all-inputs-by-weights
-    (is (= 5 (p/feed-forward [1] [5])))
-    (is (= 0.7 (p/feed-forward [1 1] [0.5 0.2])))))

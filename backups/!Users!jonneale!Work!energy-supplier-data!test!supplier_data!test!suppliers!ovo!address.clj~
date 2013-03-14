@@ -1,9 +1,0 @@
-(ns supplier-data.test.suppliers.ovo.address
-  (:use     [clojure.test])
-  (:require [supplier-data.suppliers.ovo.address :as a]))
-
-(testing "Unit type should be populated if address is flat or apartment"
-  (deftest address-contains-unit
-    (is (= "FLAT NO" (unit-type {:line_1 "flat 26"})))
-    (is (= "APARTMENT" (unit-type {:line_1 "Apartment 5"})))
-    ))

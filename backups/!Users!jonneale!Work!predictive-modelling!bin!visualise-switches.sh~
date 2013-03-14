@@ -1,3 +1,0 @@
-#! /bin/bash
-
-visualise -f "../resources/switch_data.csv"

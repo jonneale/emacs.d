@@ -1,12 +1,12 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
- package-refresh-contents
- kill-matching-buffers
- paredit-mode
+ align-regexp
+ nrepl-restart
  rgrep
- replace-string
+ paredit-mode
+ nrepl-jack-in
+ make-directory
  rename-file
 )
 
@@ -15,28 +15,34 @@
  (w3-fetch . 1)
  (clojure-jack-in . 186)
  (package-install . 8)
- (package-list-packages . 11)
+ (package-list-packages . 13)
  (package-refresh-contents . 6)
  (grep-find . 2)
- (paredit-mode . 146)
+ (paredit-mode . 178)
  (load-file . 3)
  (cd . 1)
- (make-directory . 10)
- (rename-file . 13)
- (rgrep . 57)
- (nrepl-jack-in . 52)
- (kill-matching-buffers . 18)
- (replace-string . 26)
+ (make-directory . 25)
+ (rename-file . 21)
+ (rgrep . 118)
+ (nrepl-jack-in . 77)
+ (kill-matching-buffers . 25)
+ (replace-string . 36)
  (color-theme-solarized . 3)
  (nrepl-mode . 3)
  (slime-mode . 3)
  (clojure-mode . 4)
- (align-regexp . 4)
+ (align-regexp . 13)
  (nrepl . 6)
  (clojure-test-run-test . 2)
  (grep . 1)
  (nrepl-popup-buffer-quit . 1)
- (kill-buffer . 1)
- (nrepl-restart . 2)
+ (kill-buffer . 2)
+ (nrepl-restart . 104)
  (nrepl-load-current-buffer . 2)
+ (clojure-test-mode . 5)
+ (global-auto-revert-mode . 3)
+ (save-some-buffers . 2)
+ (copy-file . 3)
+ (gnus . 1)
+ (erc . 1)
 )

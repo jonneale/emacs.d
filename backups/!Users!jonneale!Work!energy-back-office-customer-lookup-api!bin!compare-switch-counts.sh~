@@ -1,3 +1,0 @@
-#! /bin/bash
-
-lein run -m energy-back-office-customer-lookup-api.import.compare-counts

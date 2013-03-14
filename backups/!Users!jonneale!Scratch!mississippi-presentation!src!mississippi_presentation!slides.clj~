@@ -1,3 +1,0 @@
-(ns mississippi-presentation.slides
-  (:require [hiccup.core                :as hiccup]
-            [hiccup.page                :as page]))

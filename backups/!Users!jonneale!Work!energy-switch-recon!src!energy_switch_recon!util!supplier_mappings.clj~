@@ -1,8 +1,0 @@
-(ns energy-switch-recon.util.supplier-mappings)
-
-(def suppliers
-  {"british-gas"   "British Gas"
-   "edf"           "EDF Energy"
-   "first-utility" "First Utility"
-   }
-  )

@@ -1,3 +1,0 @@
-(ns blog-clj.home
-  (:require [hiccup.core                             :as hiccup]
-            [hiccup.page                             :as page]))
