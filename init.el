@@ -119,3 +119,11 @@
 ;; nrepl
 (when (not (package-installed-p 'nrepl))
   (package-install 'nrepl))
+
+(defun nrepl-limit-print-length ()
+  (interactive)
+  (nrepl-send-string-sync "(set! *print-length* 100)" "clojure.core"))
+
+(defun nrepl-unlimit-print-length ()
+  (interactive)
+  (nrepl-send-string-sync "(set! *print-length* nil)" "clojure.core"))
