@@ -120,6 +120,8 @@
 (when (not (package-installed-p 'nrepl))
   (package-install 'nrepl))
 
+(require 'nrepl)
+
 (defun nrepl-limit-print-length ()
   (interactive)
   (nrepl-send-string-sync "(set! *print-length* 100)" "clojure.core"))
@@ -127,3 +129,8 @@
 (defun nrepl-unlimit-print-length ()
   (interactive)
   (nrepl-send-string-sync "(set! *print-length* nil)" "clojure.core"))
+
+(nrepl-limit-print-length)
+(nrepl-toggle-pretty-printing)
+(setq nrepl-popup-stacktraces-in-repl t)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
