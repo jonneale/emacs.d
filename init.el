@@ -130,7 +130,12 @@
   (interactive)
   (nrepl-send-string-sync "(set! *print-length* nil)" "clojure.core"))
 
-(nrepl-limit-print-length)
-(nrepl-toggle-pretty-printing)
-(setq nrepl-popup-stacktraces-in-repl t)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+(setq js-indent-level 2)
+
+(defun beautify-json ()
+  (interactive)
+  (let ((b (if mark-active (min (point) (mark)) (point-min)))
+        (e (if mark-active (max (point) (mark)) (point-max))))
+    (shell-command-on-region b e
+                             "python -mjson.tool" (current-buffer) t)
+    (esk-indent-buffer)))
