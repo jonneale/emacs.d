@@ -1,0 +1,14 @@
+#+STARTUP: showall hidestars
+* Emacs config following [[https://www.youtube.com/watch?v=x5KiYDd9s8k][Mike Zamansky's Youtube tutorials]]
+  Packages installed
+  - Try
+  - All the icons
+  - All the icons dired
+  - which-key
+  - windmove
+  - org-bullets
+
+  Other config
+  - vs dark plus theme
+  - source code pro font
+  - binding for uk keyboards for #
