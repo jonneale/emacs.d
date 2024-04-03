@@ -33,6 +33,14 @@
 
 (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
 
+
+
+(use-package clojure-mode
+  :ensure t)
+
+(use-package cider
+  :ensure t)
+
 (use-package all-the-icons
   :ensure t)
 
@@ -44,51 +52,80 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(pdf-tools exec-path-from-shell cider clojure-mode auto-complete paredit org-bullets all-the-icons-dired all-the-icons vscode-dark-plus-theme which-key try use-package))
+ '(safe-local-variable-values
+   '((ffip-patterns "*.org" "*.rb" "*.sh" "*.md" "*.css" "*.scss" "Rakefile" "Procfile" "Capfile" "*.sql" "*.json" "*.haml" "*.js")
+     (ffip-find-options . "-not -regex \".*out-.*\""))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
-;; Clojure
 
-(unless (package-installed-p 'clojure-mode)
-  (package-install 'clojure-mode))
-
-(unless (package-installed-p 'cider)
-  (package-install 'cider))
-
-(unless (package-installed-p 'cider)
-  (package-install 'cider))
-
-(use-package swiper
-  :ensure try
+(use-package paredit
+  :ensure t
+  :init
+  (add-hook 'clojure-mode-hook #'enable-paredit-mode)
+  (add-hook 'cider-repl-mode-hook #'enable-paredit-mode)
+  (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
+  (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+  (add-hook 'ielm-mode-hook #'enable-paredit-mode)
+  (add-hook 'lisp-mode-hook #'enable-paredit-mode)
+  (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+  (add-hook 'scheme-mode-hook #'enable-paredit-mode)
   :config
-  (progn
-    (ivy-mode 1)
-    (setq ivy-use-virtual-buffers t)
-    (setq enable-recursive-minibuffers t)
-    ;; enable this if you want `swiper' to use it
-    ;; (setq search-default-mode #'char-fold-to-regexp)
-    (global-set-key "\C-s" 'swiper)
-    (global-set-key (kbd "C-c C-r") 'ivy-resume)
-    (global-set-key (kbd "<f6>") 'ivy-resume)
-    (global-set-key (kbd "M-x") 'counsel-M-x)
-    (global-set-key (kbd "C-x C-f") 'counsel-find-file)
-    (global-set-key (kbd "<f1> f") 'counsel-describe-function)
-    (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
-    (global-set-key (kbd "<f1> o") 'counsel-describe-symbol)
-    (global-set-key (kbd "<f1> l") 'counsel-find-library)
-    (global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
-    (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
-    (global-set-key (kbd "C-c g") 'counsel-git)
-    (global-set-key (kbd "C-c j") 'counsel-git-grep)
-    (global-set-key (kbd "C-c k") 'counsel-ag)
-    (global-set-key (kbd "C-x l") 'counsel-locate)
-    (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
-    (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)))
+  (show-paren-mode t)
+  :bind (("M-[" . paredit-wrap-square)
+         ("M-{" . paredit-wrap-curly))
+  :diminish nil)
 
-(defalias 'list-buffers 'ibuffer-other-window)
-    
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
-(add-hook 'clojure-mode 'enable-paredit-mode)
-(add-hook 'clojurescript-mode 'enable-paredit-mode)
+(setq mac-option-key-is-meta t
+      mac-command-key-is-meta nil
+      mac-command-key-is-super t
+      mac-command-modifier 'super
+      mac-option-modifier 'meta)
 
-(use-package magit
-  :ensure t)
+(define-key global-map [?\s-z] nil)
+(defun toggle-fullscreen ()
+  "Toggle full screen"
+  (interactive)
+  (set-frame-parameter
+   nil 'fullscreen
+   (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
+     
+(global-set-key [f7] 'toggle-fullscreen)
+
+(use-package auto-complete
+  :ensure t
+  :init (progn (ac-config-default)
+	       (global-auto-complete-mode t)))
+
+(use-package exec-path-from-shell)
+
+(unless (package-installed-p 'exec-path-from-shell)
+  (package-refresh-contents)
+  (package-install 'exec-path-from-shell))
+
+(when (daemonp)
+  (exec-path-from-shell-initialize))
+
+
+(add-to-list 'load-path "<path-to-lsp-bridge>")
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(require 'lsp-bridge)
+(global-lsp-bridge-mode)
+
+;; share killring between OSX and emacs
+(setq save-interprogram-paste-before-kill 't)
+(setq x-select-enable-clipboard 't)
